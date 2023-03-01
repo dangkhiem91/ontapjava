@@ -22,12 +22,7 @@ public class DanhSachSanPham {
         do {
             System.out.print("Tên sản phẩm: ");
             String sp = scanner.nextLine();
-//            scanner.nextLine();
             id++;
-//            if (id > maxId){
-//                maxId = id;
-//
-//            }
             if (sp == null |sp.equals("")){
                 break;
             } else {
@@ -41,16 +36,6 @@ public class DanhSachSanPham {
                 System.out.print("\n");
                 list.add(new SanPham(id,sp, nsx, dsp, giasp));
             }
-
-//            System.out.print("Nhập nhà sản xuất:");
-//            String nsx = scanner.nextLine();
-//            System.out.print("Nhập dòng sản phẩm:");
-//            String dsp = scanner.nextLine();
-//            System.out.print("Nhập giá thành sản phẩm:");
-//            double giasp = scanner.nextDouble();
-//            scanner.nextLine();
-
-
         }
         while (true);
     }
@@ -76,6 +61,8 @@ public class DanhSachSanPham {
                 System.out.println("ID\t\t|Ten san pham\t\t|Nha san xuat\t\t|Dong san pham\t\t|Gia\t\t");
                 System.out.printf("%7d |%18s | %18s| %18s| %.2f\n", found.getId(),found.getProductname(),found.getManufacturer(),found.getProductline(), found.getPrice());
                 break;
+            }else {
+                System.out.println("Khong tim thay san pham nao");
             }
         }
     }
@@ -88,20 +75,56 @@ public class DanhSachSanPham {
     }
 
     public void updatebyId(){
-        System.out.println("Nhap thong tin san pham can cap nhat: ");
-        String s1 = scanner.nextLine();
+        Scanner update = new Scanner(System.in);
+        System.out.println("Nhap ID san pham can cap nhat: ");
+        int s1 = update.nextInt();
         SanPham updateSP = null;
 
         for (SanPham sanPham : list) {
-            if (sanPham.getProductname().equals(s1)) {
+            if (sanPham.getId() == s1){
                 updateSP = sanPham;
-                int i = sanPham.getId();
+                System.out.print("Ten san pham can cap nhat: ");
+                String nameUpdate = update.nextLine();
+                updateSP.setProductname(nameUpdate);
+                update.nextLine();
+                System.out.print("Ten nha san xuat can cap nhat: ");
+                String manuUpdate = update.nextLine();
+                updateSP.setManufacturer(manuUpdate);
+//                update.nextLine();
+                System.out.print("Ten dong san pham can cap nhat: ");
+                String lineUpdate = update.nextLine();
+                updateSP.setProductline(lineUpdate);
+//                update.nextLine();
+                System.out.print("Gia can cap nhat: ");
+                double  priceupdate = update.nextDouble();
+                updateSP.setPrice(priceupdate);
+//                update.nextLine();
+                System.out.println(nameUpdate);
+                System.out.println("ID\t\t|Ten san pham\t\t|Nha san xuat\t\t|Dong san pham\t\t|Gia\t\t");
+                System.out.printf("%7d |%18s | %18s| %18s| %.2f\n", updateSP.getId(),updateSP.getProductname(),updateSP.getManufacturer(),updateSP.getProductline(), updateSP.getPrice());
+            } else {
+                System.out.println("Khong tim thay ID phu hop");
             }
         }
     }
 
     public void deleteById(){
-        
+        System.out.println("Xoa san pham theo ID: ");
+        System.out.println("Nhap ID can xoa: ");
+        int idtoremove = scanner.nextInt();
+        SanPham spfound = null;
+        for (SanPham sp : list){
+            if (sp.getId() == idtoremove){
+                spfound = sp;
+                break;
+            }
+        }
+        if (spfound != null){
+            list.remove(spfound);
+            System.out.println("San pham da duoc xoa");
+        } else {
+            System.out.println("San pham khong tim thay trong danh sach");
+        }
     }
 
     public void menu(){
@@ -134,7 +157,9 @@ public class DanhSachSanPham {
                 case 5:
                     updatebyId();
                     break;
-                //            case 6:
+                case 6:
+                    deleteById();
+                    break;
                 case 7:
                     System.exit(0);
                     break;
