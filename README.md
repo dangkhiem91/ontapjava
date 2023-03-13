@@ -28,4 +28,10 @@ là khả năng của một chương trình Java để thực hiện nhiều tá
 - [BLOCKED] - Đây là một dạng của trạng thái "Not Runable", là trạng thái khi thread vẫn còn sống, nhưng hiện tại không được chọn để chạy. Thread chờ một monitor để unlick một đối tượng mà nó cần.
 - [TERMINATED] - Một thread ở trong trạng thái terminated hoặc dead khi phương thức run() của nó bị thoát.
 
-
+## 6. Callable, Future, Executors
+###### 6.1.Callable
+Callable là một interface trong java, nó định nghĩa một công việc và trả về một kết quả trong tương lai và có thể throw Exception.
+###### 6.2.Future
+Future là kết quả trả về của Callable, nó thể hiện kết quá của một phép tính không đồng bộ, cho phép kiểm trả trạng thái của phép tính(đã thực hiện xong chưa, kết quả trả về là gì...)
+###### 6.3.Executors
+Executors là một class tiện ích trong java, dùng để tạo thread pool, đối tượng callable cho các xử lý bất đồng bộ.
