@@ -1,0 +1,7 @@
+[id=1,name=iPhone 14 Pro Max,manufacturer=Iphone,model=14 series,price=28090]
+[id=2,name=iPhone 13 128GB,manufacturer=Iphone,model=13 Series,price=18290]
+[id=3,name=iPhone 14 Pro 128GB,manufacturer=Iphone,model=14 series,price=25790]
+[id=4,name=iPhone 11 64GB,manufacturer=Iphone,model=11 series,price=10990]
+[id=5,name=Samsung Galaxy A73,manufacturer=Samsung,model=Galaxy,price=10490]
+[id=6,name=Samsung Galaxy Z Flip4,manufacturer=Samsung,model=Galaxy Z,price=20990]
+[id=7,name=Xiaomi Redmi Note 11,manufacturer=Xiaomi,model=Redmi Note,price=3990]
