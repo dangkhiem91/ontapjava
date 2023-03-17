@@ -35,3 +35,21 @@ Callable là một interface trong java, nó định nghĩa một công việc v
 Future là kết quả trả về của Callable, nó thể hiện kết quá của một phép tính không đồng bộ, cho phép kiểm trả trạng thái của phép tính(đã thực hiện xong chưa, kết quả trả về là gì...)
 ###### 6.3.Executors
 Executors là một class tiện ích trong java, dùng để tạo thread pool, đối tượng callable cho các xử lý bất đồng bộ.
+
+## 7.Kế thừa
+###### 7.1.Upcasting (Ép kiểu từ lớp con lên lớp cha)
+Khi biến của lớp cha tham chiếu tới đối tượng của lớp con( đối tượng của lớp con bị chuyển kiểu dữ liệu về lớp cha)
+Khi biến của lớp cha tham chiếu tới đối tượng của lớp con thì biến này sẽ được sử dụng các thuộc tính và phương thức của lớp cha, nếu phương thức ở lớp cha bị ghi đè ở lớp con thì phương thức của lớp con sẽ được dùng khi biến gọi đến.
+![image](https://user-images.githubusercontent.com/73598267/225805209-b983c5dd-1039-4a76-9bf2-f952a8adbe48.png)
+
+Kết quả trả về: 
+
+![image](https://user-images.githubusercontent.com/73598267/225805303-134dc81a-7593-44a2-ad07-45619905b9f5.png)
+
+###### 7.2.Downcasting (Ép kiểu từ lớp cha xuống lớp con)
+Ngược lại của Upcasting
+![image](https://user-images.githubusercontent.com/73598267/225804728-a73fbcbb-1f92-4e19-b4ac-7d812f1ddefa.png)
+Có thể downcasting như sau:
+![image](https://user-images.githubusercontent.com/73598267/225805120-a1d8d38f-763f-40b5-a982-d2bec3f80dba.png)
+
+
