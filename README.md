@@ -52,4 +52,12 @@ Ngược lại của Upcasting
 Có thể downcasting như sau:
 ![image](https://user-images.githubusercontent.com/73598267/225805120-a1d8d38f-763f-40b5-a982-d2bec3f80dba.png)
 
+## 8. Từ khóa static 
+Từ khóa static được sử dụng để quản lý bộ nhớ tốt hơn và nó có thể truy cập trực tiếp thông qua lớp mà không cần khởi tạo. Từ khóa static thuộc về lớp chứ không thuộc về instance của lớp.
+
+###### 8.1. Biến static
+Biến có thể được khai báo cùng với từ khóa static và biến đó được gọi là class variable. Việc cấp phát bộ nhớ cho biến static chỉ xảy ra một lần khi class được nạp vào bộ nhớ.
+Biến static có thể được sử dụng làm thuộc tính chung, để dùng chung dữ liệu cho tất cả objects của lớp đó(giúp tiết kiệm bộ nhớ).
+
+###### 8.2. Phương thức static
 
