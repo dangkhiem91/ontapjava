@@ -72,3 +72,32 @@ Một số đặc điểm:
 1. Khối static được dùng để khởi tạo hoặc thay đổi giá trị của các biến static
 2. Nó được thực thi trước phương thức main tại thời gian tải lớp.
 3. Một class có thể có nhiều static blocks
+
+###### 8.4.class static
+Một class được có thể được đặt là static chỉ khi nó là một nested class. Một nested class có thể được truy cập mà không cần một object của outer class.
+
+Tổng kết: 
+Từ khóa static biểu thị cho biến hoặc phương thức có thể được truy cập mà không cần tạo instance của lớp chứa nó. Người dùng không thể ghi đè phương thức static trong java.
+
+## 9. Từ khóa final
+Từ khóa final được sử dụng để hạn chế thao tác của người dùng.
+
+###### 9.1. Biến final
+khi một biến được khai báo với từ khóa final, nó chỉ chứa một giá trị duy nhất trong toàn bộ chương trình.
+
+###### 9.2. Phương thức final
+khi một phương thức được khai báo với từ khóa final, các class con kế thừa sẽ không thể ghi đè phương thức này.
+###### 9.3. Class final
+khi từ khóa final sử dụng cho một lớp, lớp này sẽ không thể được kế thừa.
+###### 9.4. Biến static final trống
+Một biến final mà không được khởi tạo tại thời điểm khai báo được gọi là biến final rỗng.
+
+Tổng kết: 
+1. phương thức final có thể được kế thừa nhưng không thể ghi đè.
+
+
+
+
+
+
+
