@@ -60,4 +60,14 @@ Biến có thể được khai báo cùng với từ khóa static và biến đ�
 Biến static có thể được sử dụng làm thuộc tính chung, để dùng chung dữ liệu cho tất cả objects của lớp đó(giúp tiết kiệm bộ nhớ).
 
 ###### 8.2. Phương thức static
+Một số đặc điểm:
+1. Phương thức static thuộc lớp chứ không phải đối tượng của lớp.
+2. Phương thức static có thể được gọi mà không cần khởi tạo instance của một lớp.
+3. Một phương thức có thể truy cập biến static và có thể thay đổi giá trị của nó.(phương thức non-static cũng có thể thay đổi giá trị của biến static nhưng phải thông qua 1 class khác).
+4. Một phương thức static chỉ có thể gọi một phương thức static khác, không thể gọi được một phương thức non-static.
+5. Một phương thức static không thể được sử dụng với từ khóa this và super.
+6. Người dùng không thể override phương thức static trong java, bởi vì kỹ thuật đè(overriding) phương thức được dựa trên quá trình gán(binding) động khi chương trình đang chạy(runtime) và những phương thức static được gãn tĩnh trong thời gian biên dịch.
 
+###### 8.3.static blocks
+1. Khối static được dùng để khởi tạo hoặc thay đổi giá trị của các biến static
+2. Nó được thực thi trước phương thức 
