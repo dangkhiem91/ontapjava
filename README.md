@@ -70,4 +70,5 @@ Một số đặc điểm:
 
 ###### 8.3.static blocks
 1. Khối static được dùng để khởi tạo hoặc thay đổi giá trị của các biến static
-2. Nó được thực thi trước phương thức 
+2. Nó được thực thi trước phương thức main tại thời gian tải lớp.
+3. Một class có thể có nhiều static blocks
