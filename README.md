@@ -96,7 +96,13 @@ Tổng kết:
 1. phương thức final có thể được kế thừa nhưng không thể ghi đè.
 
 
-
+## 10. Từ khóa this
+Đại diện cho đối tượng hiện thời trong một lớp.
+Sử dụng để gọi phương thức khởi tạo khác
+Sử dụng khi tham số trùng tên với tên thuộc tính
+Sử dụng để gọi đến các thuộc tính/ phương thức khác
+Sử dụng như đối số khi gọi phương thức
+Sử dụng để trả về đối tượng hiện thời trong một phương thức
 
 
 
