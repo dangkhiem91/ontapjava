@@ -104,6 +104,19 @@ Sử dụng để gọi đến các thuộc tính/ phương thức khác
 Sử dụng như đối số khi gọi phương thức
 Sử dụng để trả về đối tượng hiện thời trong một phương thức
 
+## 11. Một số modifiers
+###### 11.1. từ khóa volatile
+được sử dụng để đánh dấu một biến java là đã được lưu trữ trong bộ nhớ chính, mỗi lần đọc biến volatile sẽ được đọc từ bộ nhớ chính của máy tính chứ không phải bộ nhớ đệm CPU và mọi hành động vào biến volatile sẽ được ghi vào bộ nhớ chính chứ không chỉ ghi vào bộ nhớ đệm CPU.
+1. Biến volatile đảm bảo khả năng đồng bộ giá trị biến trên các luồng
+2. Volatile đảm bảo khả năng cho thấy sự thay đổi giữa các thread(khả năng hiển thị)
+3. volatile chỉ dùng cho fields
+4. không thường được sử dụng
+###### 11.2.native
+1. chỉ dùng với methods
+2. thực hiện 1 phương thức của ngôn ngữ khác như C, C++;
+###### 11.3.transient
+
+
 
 
 
